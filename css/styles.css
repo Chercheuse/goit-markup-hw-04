@@ -9,6 +9,16 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
+
+button {
+	font-family: inherit;
+	color: currentColor;
+}
+
+input {
+	font-family: inherit;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -27,7 +37,7 @@ body {
 }
 
 
-.nav-list_item:after {
+.current:after {
   position: absolute;
   content: "";
   left: 0;
@@ -49,7 +59,7 @@ body {
 .logo-part {
   color: #2e2f42;
 }
-.nav-list_item {
+.current {
   position:relative;
   color: #404bbf;
 }
@@ -64,8 +74,6 @@ body {
   text-decoration: none;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  color: #404bbf;
 }
 
 .contact-list {
@@ -108,7 +116,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/main-background-image.jpg");
+    url("../images/main-background-image.jpg");
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -178,6 +186,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.team-desc {
+  margin-bottom: 8px;
 }
 
 .overlay {
@@ -341,10 +353,8 @@ li {
 .nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
   align-items: center;
   text-decoration: none;
-  position: relative;
 }
 
 .container {
@@ -398,11 +408,6 @@ li {
 
 .team-unity {
   padding: 32px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
 }
 
 .portfolio-section {
@@ -444,8 +449,7 @@ li {
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: center;
-  gap: 18px;
+  /* gap: 18px; */
 }
 
 .icon {
